@@ -8,4 +8,4 @@ WORKDIR /app
 # 현재(호스트) 디렉토리에 있는 pipeline.py 파일을 컨테이너의 /app/pipeline.py로 복사
 COPY pipeline.py pipeline.py
 
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "python", "pipeline.py" ]
